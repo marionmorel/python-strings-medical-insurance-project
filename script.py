@@ -31,3 +31,15 @@ for character in updated_medical_data:
 
 # Task 5
 print("There are {} medical records in the data.".format(num_records))
+
+# Task 6
+medical_data_split = updated_medical_data.split(';')
+print(medical_data_split)
+
+# Task 7
+medical_records = []
+
+# Task 8
+for record in medical_data_split:
+  medical_records.append(record.split(','))
+print(medical_records)
