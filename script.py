@@ -65,8 +65,7 @@ print(medical_records_clean)
 for record in medical_records_clean:
   
 # Task 15
-  record[0] = record[0].upper()
-  print(record[0])
+  print(record[0].upper())
 
 # Task 16
 names = []
@@ -94,3 +93,14 @@ for bmi in bmis:
 # Task 21
 average_bmi = round((total_bmi / len(bmis)), 2)
 print("Average BMI: {}".format(average_bmi))
+
+# Task 22
+
+# Calculate the average insurance cost
+total_insurance_cost = 0
+for cost in insurance_costs:
+  total_insurance_cost += float(cost.strip('$'))
+
+# Print out individual strings with a for loop
+for i in range(len(medical_records_clean)):
+  print("{} is {} years old with a BMI of {} and an insurance cost of {}".format(medical_records_clean[i][0].split(" ")[0], medical_records_clean[i][1], medical_records_clean[i][2], medical_records_clean[i][3]))
