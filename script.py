@@ -43,3 +43,20 @@ medical_records = []
 for record in medical_data_split:
   medical_records.append(record.split(','))
 print(medical_records)
+
+# Task 9
+medical_records_clean = []
+
+# Task 10
+for record in medical_records:
+  record_clean = []
+
+# Task 11
+  for item in record:
+    record_clean.append(item.strip())
+
+# Task 12
+  medical_records_clean.append(record_clean)
+
+# Task 13
+print(medical_records_clean)
