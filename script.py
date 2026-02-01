@@ -13,3 +13,21 @@ Lorena Hodson ,65, 33.1 , #19370.0;
 Isaac Vu ,34, 24.8,   #7045.0"""
 
 # Add your code here
+
+# Task 1
+print(medical_data)
+
+# Task 2
+updated_medical_data = medical_data.replace("#", "$")
+print(updated_medical_data)
+
+# Task 3
+num_records = 0
+
+# Task 4
+for character in updated_medical_data:
+  if character == "$":
+    num_records += 1
+
+# Task 5
+print("There are {} medical records in the data.".format(num_records))
