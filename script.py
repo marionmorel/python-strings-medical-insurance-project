@@ -60,3 +60,37 @@ for record in medical_records:
 
 # Task 13
 print(medical_records_clean)
+
+# Task 14
+for record in medical_records_clean:
+  
+# Task 15
+  record[0] = record[0].upper()
+  print(record[0])
+
+# Task 16
+names = []
+ages = []
+bmis = []
+insurance_costs = []
+
+# Task 17
+for record in medical_records_clean:
+  names.append(record[0])
+  ages.append(record[1])
+  bmis.append(record[2])
+  insurance_costs.append(record[3])
+
+# Task 18
+print(names, ages, bmis, insurance_costs)
+
+# Task 19
+total_bmi = 0
+
+# Task 20
+for bmi in bmis:
+  total_bmi += float(bmi)
+
+# Task 21
+average_bmi = round((total_bmi / len(bmis)), 2)
+print("Average BMI: {}".format(average_bmi))
